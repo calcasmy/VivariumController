@@ -9,8 +9,9 @@ class VivariumController:
 
         _time = time.strftime("%I:%M %p", time.localtime())
 
-        if (_astroData[1] <= _time <= _astroData[2]):
-            VivariumData.getluminosdata()
+        if(len(_astroData)> 0):
+            if (_astroData[1] <= _time <= _astroData[2]):
+                VivariumData.getluminosdata()
         
         VivariumData.getTempHumidData()
 
