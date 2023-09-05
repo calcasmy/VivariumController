@@ -43,4 +43,4 @@ class VivariumData:
 		print("light: %.2f Lux"%viva_l)
 		return viva_l
 
-# VivariumData.getVivariumData()
+VivariumData.getVivariumData()
